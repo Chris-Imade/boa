@@ -25,17 +25,23 @@ signInForm.onclick = (e) => {
         console.log(result);
         result.map((item) => {
             console.log("User Ids: ", userId);
-            if(item.id == userId) {
-                console.log("You are a user")
-            } else {
-                console.log("You are not a user");
-            };
+            // if(item.id == userId) {
+            //     console.log("You are a user")
+            // } else {
+            //     console.log("You are not a user");
+            // };
             // alert("Incorrect Credentials");
             
         })
 
     })
     .catch((err) => console.error(err));
+    
+
+    loginBtn.onclick = (e) => {
+        e.preventDefault();
+        window.location.href = "/dashboard.html"
+    }
 
 }
 
