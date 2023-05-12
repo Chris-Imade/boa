@@ -19,9 +19,9 @@ export default {
         title: "Amount"
       },
       {
-        name:"userID",
-        type: "reference",
-        to:[{type: "user"}]
+        name:"postedBy",
+        type: "postedBy",
+        title: "PostedBy"
       }
     ]
   }

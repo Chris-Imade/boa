@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="overflow-x-hidden">
+  
 
 
   <nav class="bg-[#DC4131] overflow-hidden lg:h-[140px] text-center lg:text-left flex flex-col lg:flex-row items-center justify-between">
@@ -21,7 +22,7 @@
           <li class="mr-4 text-white text-lg font-semibold">Profile & Settings</li>
           <li class="mr-4 text-white text-lg font-semibold">Merrill</li>
           <li class="mr-4 text-white text-lg font-semibold">Saved Items</li>
-          <li class="mr-4 text-white text-lg font-semibold">Sign Out</li>
+          <li style="cursor: pointer" class="mr-4 text-white text-lg font-semibold cursor-pointer" id="signOutBtn">Sign Out</li>
         </ul>
       </div>
       <div class="flex items-center mt-6">
@@ -108,7 +109,9 @@
           <div class="m-12">
               <h3 class="text-gray-600 text-xl">Wealth Management Banking Client</h3>
               <div class="flex justify-between items-center mt-3">
-                  <h1 class="text-5xl font-semibold text-gray-600">Hello, Jane</h1>
+                  <h1 class="text-5xl font-semibold text-gray-600">Hello, <span id="username"></span></h1>
+                  <p>-</p>
+                  <p id="accountBalance" class="font-semibold text-xl">$3000</p>
                   <ul class="flex ml-[7rem]">
                       <li class="text-xl font-semibold text-blue-500 mr-3">Update Profile</li>
                       <li class="text-xl font-semibold text-blue-500 border-l-[2px] border-l-gray-400 pl-3">Security Center</li>
@@ -123,54 +126,7 @@
                 <h1 class="font-semibold ml-2 text-gray-600 text-2xl">Personal Accounts</h1>
               </div>
     
-              <div class="border-t-[4px] border-t-[#233EBE]">
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                
-              </div>
+              <div id="deposits" class="border-t-[4px] border-t-[#233EBE]"></div>
     
               <!-- Ends first transactions -->
             </div>
@@ -182,52 +138,9 @@
                 <h1 class="font-semibold ml-2 text-gray-600 text-2xl">Investment accounts  Merrill</h1>
               </div>
     
-              <div class="border-t-[4px] border-t-[#233EBE]">
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-    
-                <div class="border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]">
-                  <div>
-                    <h3 class="text-blue-500 font-semibold text-xl mb-3">Transaction Description - CODE3535</h3>
-                    <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
-                  </div>
-                  <p>Transaction Type</p>
-                  <p class="text-xl">$7,606.85</p>
-                </div>
-            </div>
+              <div id="withdrawals" class="border-t-[4px] border-t-[#233EBE]">
+                <!-- withdrawals -->
+              </div>
     
             <!-- Ends Investments -->
     
@@ -288,5 +201,78 @@
             <div></div>
         </div>
       <!-- <script src="https://cdn-tailwindcss.vercel.app/"></script> -->
+
+
+      <script>
+
+        // Done with the authentication and data looping.
+
+
+        const withdrawals = document.querySelector("#withdrawals");
+        const deposits = document.querySelector("#deposits");
+        const accountBalance = document.querySelector("#accountBalance");
+
+        const localData = JSON.parse(localStorage.getItem("bankuser"));
+
+
+        console.log(localData);
+
+        document.getElementById("username").innerHTML = localData.userName;
+
+        accountBalance.innerHTML = `$ ${localData.accountBalance}`;
+
+
+        if (localData.transaction.length !== 0){
+          localData.transaction.forEach(item => {
+
+          if (item.transaction_type === "withdraw"){
+            const elementParentDiv = document.createElement('div');
+            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]");
+            elementParentDiv.innerHTML = `
+                <div>
+                  <h3 class="text-blue-500 font-semibold text-xl mb-3">${item.transaction_type.toUpperCase()}</h3>
+                  <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
+                </div>
+                <p>${item.transaction_type}</p>
+                <p class="text-xl">$ ${item.amount}</p>
+            `;
+
+            withdrawals.appendChild(elementParentDiv);
+          } else { 
+
+            const elementParentDiv = document.createElement('div');
+            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]");
+            elementParentDiv.innerHTML = `
+                <div>
+                  <h3 class="text-blue-500 font-semibold text-xl mb-3">${item.transaction_type.toUpperCase()}</h3>
+                  <p class="text-xl text-gray-600"><a href="#">Quick View</a></p>
+                </div>
+                <p>${item.transaction_type}</p>
+                <p class="text-xl">$ ${item.amount}</p>
+            `;
+
+            deposits.appendChild(elementParentDiv);
+
+          }
+
+          })
+        }
+
+
+        document.getElementById("signOutBtn").onclick = (e) => {
+          e.preventDefault();
+          localStorage.removeItem("bankuser");
+          window.location.href = "/index.html";
+
+        }
+
+
+        
+
+
+
+
+
+      </script>
 </body>
 </html>

@@ -1,8 +1,13 @@
 export default {
     name: 'user',
     type: 'document',
-      title: 'User',
+    title: 'User',
     fields: [
+      {
+        name: "userName",
+        type: "string",
+        title: "Username"
+      },
       {
         name: 'id',
         type: 'string',
@@ -26,5 +31,11 @@ export default {
         type: "string",
         title: "Account Balance",
       },
+      {
+        name: "transaction",
+        title: "Transactions",
+        type: "array",
+        of: [{type: "transaction"}],
+      }
     ]
   }

