@@ -20,13 +20,18 @@ let QUERY = encodeURIComponent(`*[_type == "user"]{
     }
 }`);
 
+
 // Compose the URL for your project's endpoint and add the query
 let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
 
-// Fields
-var signInForm = document.querySelector("#signInForm");
 
-signInForm.addEventListener("submit", (e) => {
+
+
+
+// Login Page Functionality
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e) {
     e.preventDefault();
     userId = e.target.userId.value;
     password = e.target.password.value;
@@ -47,4 +52,6 @@ signInForm.addEventListener("submit", (e) => {
         }
     })
     .catch((err) => console.error(err));
-})
+
+});
+

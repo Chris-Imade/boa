@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    background-image: linear-gradient(#dc1431,#c41230);
+}
+
+.btn-login {
+    background-image: linear-gradient(#007dc3,#0067b1);
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.btn-login:hover {
+    background-image: linear-gradient(#0067b1, #007dc3);
+}

